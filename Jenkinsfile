@@ -6,7 +6,8 @@ pipeline{
   stages{
     stage('Demo'){
       steps{
-	name 'Mani'
+	output = name 'Mani'
+	println(output)
       }
     }
   }
