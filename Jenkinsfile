@@ -7,8 +7,10 @@ pipeline{
   stages{
     stage('Demo'){
       steps{
-	output = name 'Mani'
-	println(output)
+	script{
+	  output = name 'Mani'
+	  println(output)
+	}
       }
     }
   }
